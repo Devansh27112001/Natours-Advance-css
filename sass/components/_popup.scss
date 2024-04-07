@@ -11,6 +11,7 @@
   // We cannot use this as we won't be able to animate it if we use display:none
   // display: none;
   transition: all 0.3s;
+  backdrop-filter: blur(10px);
 
   // If we add href="#something" to an anchor element, than that is the target element. This means that the url will be changed to /#something that is the target
   //  Now for here, we have used something = popup. So, we have to consider the case popup:target.
