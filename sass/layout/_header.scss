@@ -10,6 +10,10 @@
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
   //& copies the whole parent selector. In this case, it is .header. This will translate to .header__logo-box.
   &__logo-box {
     position: absolute;
